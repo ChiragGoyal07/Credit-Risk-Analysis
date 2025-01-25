@@ -10,9 +10,93 @@ The original dataset consisted of 45528 rows and 19 columns, but for this study,
 
 Dataset can be download at: https://www.kaggle.com/datasets/pradip11/amexpert-codelab-2021
 
-## EDA - Feature Engineering - Modeling
-The detailed processes can be found in our notebook. 
-You can access full here: https://github.com/maixbach/credit-risk-analysis-using-ML/blob/main/Credit%20Risk%20Analysis%20-%20Mai%20Xuan%20Bach.ipynb
+Key Features:
+
+Data Processing: Cleaning, encoding, and scaling the dataset for analysis.
+
+Exploratory Data Analysis (EDA): Visualizing key trends and relationships in the data.
+
+Modeling: Building and evaluating machine learning models to predict credit risk.
+
+Interpretability: Extracting actionable insights to assist decision-makers.
+
+Why This Project Matters
+
+Credit risk analysis is critical for financial institutions to minimize potential losses and maintain financial health. By leveraging machine learning, this project offers an innovative approach to:
+
+Identify high-risk customers.
+
+Reduce loan default rates.
+
+Enhance customer screening processes.
+
+How It Works
+
+1. Data Preprocessing
+
+The dataset is prepared by:
+
+Handling missing values.
+
+Encoding categorical variables.
+
+Scaling numerical features.
+
+2. Exploratory Data Analysis
+
+EDA includes:
+
+Distribution analysis of key variables.
+
+Identifying correlations.
+
+Visualizing patterns with tools like Seaborn and Matplotlib.
+
+3. Machine Learning Models
+
+The project implements and evaluates:
+
+Logistic Regression
+
+Random Forest
+
+Gradient Boosting
+
+4. Model Evaluation
+
+The models are assessed using metrics like:
+
+Accuracy
+
+Precision
+
+Recall
+
+F1 Score
+
+Tools and Libraries Used
+
+Programming Language: Python
+
+Libraries: Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn, Imbalanced-learn
+
+How to Use This Project
+
+Clone the repository.
+
+git clone <repository-link>
+
+Install the required libraries.
+
+pip install -r requirements.txt
+
+Open the Jupyter notebook and follow the step-by-step analysis.
+
+Results
+
+Insights: Identified key factors influencing credit risk.
+
+Performance: Achieved high accuracy and interpretability in predicting credit risk.
 
 ## Experimental result
 Model         | Accuracy
