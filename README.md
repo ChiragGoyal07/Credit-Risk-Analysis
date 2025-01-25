@@ -10,92 +10,9 @@ The original dataset consisted of 45528 rows and 19 columns, but for this study,
 
 Dataset can be download at: https://www.kaggle.com/datasets/pradip11/amexpert-codelab-2021
 
-Key Features:
+# Credit Risk Analysis
 
-Data Processing: Cleaning, encoding, and scaling the dataset for analysis.
-
-Exploratory Data Analysis (EDA): Visualizing key trends and relationships in the data.
-
-Modeling: Building and evaluating machine learning models to predict credit risk.
-
-Interpretability: Extracting actionable insights to assist decision-makers.
-
-Why This Project Matters
-
-Credit risk analysis is critical for financial institutions to minimize potential losses and maintain financial health. By leveraging machine learning, this project offers an innovative approach to:
-
-Identify high-risk customers.
-
-Reduce loan default rates.
-
-Enhance customer screening processes.
-
-How It Works
-
-1. Data Preprocessing
-
-The dataset is prepared by:
-
-Handling missing values.
-
-Encoding categorical variables.
-
-Scaling numerical features.
-
-2. Exploratory Data Analysis
-
-EDA includes:
-
-Distribution analysis of key variables.
-
-Identifying correlations.
-
-Visualizing patterns with tools like Seaborn and Matplotlib.
-
-3. Machine Learning Models
-
-The project implements and evaluates:
-
-Logistic Regression
-
-Random Forest
-
-Gradient Boosting
-
-4. Model Evaluation
-
-The models are assessed using metrics like:
-
-Accuracy
-
-Precision
-
-Recall
-
-F1 Score
-
-Tools and Libraries Used
-
-Programming Language: Python
-
-Libraries: Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn, Imbalanced-learn
-
-How to Use This Project
-
-Clone the repository.
-
-git clone <repository-link>
-
-Install the required libraries.
-
-pip install -r requirements.txt
-
-Open the Jupyter notebook and follow the step-by-step analysis.
-
-Results
-
-Insights: Identified key factors influencing credit risk.
-
+This project is a credit risk analysis system that predicts the likelihood of loan default using advanced machine learning techniques. By analyzing various customer and financial data points, the project helps financial institutions make informed decisions to minimize risk.
 Performance: Achieved high accuracy and interpretability in predicting credit risk.
 
 ## Experimental result
@@ -109,5 +26,73 @@ KNN | 0.9681
 CatBoost | 0.9683
 XGBoost | 0.9734
 
-## Further developments
-Future development in this area could focus on comparing the performance of other machine learning models such as Support Vector Machines, Neural Networks, and Deep Learning, among others. This can help in identifying which models perform best in different scenarios and can further improve the accuracy and precision of credit risk analysis. Additionally, future studies can explore the use of alternative data sources such as social media and other online activities to further improve credit risk analysis.
+## Exploratory Data Analysis (EDA)
+EDA focuses on understanding the dataset and identifying trends:
+
+- **Distribution Analysis:** Visualizing key variables like loan amounts and credit scores.
+- **Correlation Matrix:** Identifying relationships between features.
+- **Class Imbalance:** Examining the distribution of high-risk and low-risk labels.
+
+## Preprocessing and Feature Engineering
+Key steps in preprocessing include:
+
+1. **Missing Value Treatment:** Filling or imputing missing data points.
+2. **Feature Encoding:** Converting categorical variables to numerical values using Label Encoding and One-Hot Encoding.
+3. **Feature Scaling:** Standardizing numerical features using MinMaxScaler for model efficiency.
+4. **Data Splitting:** Dividing the dataset into training and testing sets (80:20 split).
+
+## Model Training
+Multiple machine learning models were implemented and evaluated, including:
+
+- **Logistic Regression:** For baseline classification.
+- **Random Forest:** For robust ensemble learning.
+- **Gradient Boosting:** For improved predictive accuracy.
+
+### Model Evaluation
+The models were assessed using the following metrics:
+
+- Accuracy
+- Precision
+- Recall
+- F1 Score
+
+## Results
+- **Performance:** The Gradient Boosting model achieved the highest accuracy on the test set.
+- **Insights:** Identified key factors influencing credit risk, such as credit history and debt-to-income ratio.
+
+Example:
+
+- Input: Customer with a credit score of 700 and a debt-to-income ratio of 30%.
+- Prediction: Low Risk.
+
+## How to Run the Code
+
+1. Install Dependencies:
+   ```bash
+   pip install pandas numpy matplotlib seaborn scikit-learn imbalanced-learn
+   ```
+
+2. Clone the Repository:
+   ```bash
+   git clone <repository-link>
+   cd <repository-directory>
+   ```
+
+3. Prepare the Dataset:
+   - Ensure the dataset is in the project directory.
+   - Update the file path in the notebook.
+
+4. Run the Notebook:
+   Open and execute the notebook `Credit_Risk_Analysis.ipynb` step by step.
+
+5. Test the Model:
+   Modify the test inputs in the notebook to predict credit risk for new customers.
+
+## Future Enhancements
+- **Deep Learning Models:** Implement neural networks for enhanced predictions.
+- **Real-time Predictions:** Deploy the model as a web app using Flask or Streamlit.
+- **Additional Features:** Incorporate external datasets to improve model robustness.
+- **Explainable AI:** Use SHAP or LIME to explain model predictions for better transparency.
+
+---
+
