@@ -21,9 +21,7 @@ Model         | Accuracy
 Logistic Regression | 0.9464
 Random Forest | 0.9650
 Decision Tree | 0.9663
-LightGBM  | 0.9668
 KNN | 0.9681
-CatBoost | 0.9683
 XGBoost | 0.9734
 
 ## Exploratory Data Analysis (EDA)
